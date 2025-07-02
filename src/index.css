@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @plugin "daisyui";
-
+@plugin "daisyui" {
+  themes: all;
+}
 
 html,
 body {
@@ -17,7 +19,7 @@ main {
 
 @layer components {
   .align-elements {
-    @apply max-w-8xl px-4 mx-auto;
+    @apply max-w-7xl px-4 mx-auto;
   }
   .btn {
     @apply border rounded-2xl px-2 py-1 cursor-pointer;
